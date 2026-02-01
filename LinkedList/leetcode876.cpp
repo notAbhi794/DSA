@@ -1,24 +1,24 @@
-//middle of the Linked list
-class Solution {
-public:
-    ListNode* middleNode(ListNode* head) {
-        int count = 0;
-        ListNode* temp = head;
-        // First pass: count nodes
-        while (temp != NULL) {      // TC = O(n)
-            count++;
-            temp = temp->next;
-        }
+// //middle of the Linked list
+// class Solution {
+// public:
+//     ListNode* middleNode(ListNode* head) {
+//         int count = 0;
+//         ListNode* temp = head;
+//         // First pass: count nodes
+//         while (temp != NULL) {      // TC = O(n)
+//             count++;
+//             temp = temp->next;
+//         }
 
-        int middleIdx = count/2;
-        ListNode* t =head;
-        for (int i = 0; i < count / 2; i++) {
-            t = t->next;
-        }
+//         int middleIdx = count/2;
+//         ListNode* t =head;
+//         for (int i = 0; i < count / 2; i++) {
+//             t = t->next;
+//         }
 
-        return t;
-    }
-};
+//         return t;
+//     }
+// };
 
 
 //better method 
